@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        entry: black --congig ./.black
+        language: system
+        types: [ python ]
+        pass_filename: false
+
+      - id: flake8
+        entry: flake8 --congig ./.black
+        language: system
+        types: [ python ]
+        pass_filename: false
